@@ -13,12 +13,13 @@ app.get('/',function(req,res)
 app.use(bodyParser.json());
 
 app.get('/books',book.allBooks);
-// app.get('/book/:id',bookController.getBook);
-// app.put('/book',bookController.addBook);
-// app.delete('/book/:id',bookController.deleteBook);
-// app.post('/book/:id',bookController.updateBook);
+app.get('/book/:id',book.getBooks);
+app.put('/book',book.addBook);
+app.delete('/book/:id',book.deleteBook);
+app.post('/book/:id',book.updateBook);
+app.post('/book',book.addBook);
 
 
 app.listen(port, function () {
     console.log('Updated : Server listening at port %d', port);
-  }); 
+}); 
