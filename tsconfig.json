@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+      "experimentalDecorators": true,
+      "module": "commonjs",
+      "allowSyntheticDefaultImports": true,
+      "target": "es6",
+      "noImplicitAny": true,
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "sourceMap": true,
+      "outDir": "dist",
+      "rootDir": "./src",
+      "baseUrl": "./src",
+      "resolveJsonModule": true,
+      "traceResolution": false,
+      "pretty": true,
+      "typeRoots": [
+        "node_modules/@types"
+      ],
+      "paths": {
+        "@core/*": ["core/*"]
+      }
+    },
+    "exclude": [
+      "node_modules"
+    ]
+  }
+  
